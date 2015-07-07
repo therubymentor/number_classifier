@@ -1,0 +1,13 @@
+#! /usr/bin/env ruby
+
+# a perfect number is a number that if you take the factors + the number
+# and sum them up, then multiply it by 2 times the number... If the result
+# is equal to the number it is a perfect number.
+
+# However if the result is less than 2 * number, then it is deficient
+# And if the result is greater than 2 * number then it is abundant
+
+require_relative 'classified_integers'
+using ClassifiedIntegers
+
+puts ARGV[0].to_i.classify
